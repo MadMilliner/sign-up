@@ -1,0 +1,136 @@
+@import "modern-normalize";
+
+:root {
+  line-height: 1.5;
+  box-sizing: border-box;
+  --svg-color: #3498db;
+}
+
+html {
+  font-size: clamp(1rem, 0.75rem + 1.2vw, 2rem);
+}
+
+h1, h2, h3, h4, h5, figure, p, ol, ul {
+  margin: 0;
+}
+
+ol[role="list"], ul[role="list"] {
+  list-style: none;
+  padding-inline: 0;
+}
+
+h1, h2, h3, h4, h5 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+img {
+  display: block;
+  max-inline-size: 100%;
+}
+
+/* End template */
+
+.page {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 1;
+  width: 100vw;
+}
+
+div .heading {
+  flex-basis: 30vw;
+  max-height: 100vh;
+}
+
+div .form {
+  flex-basis: 70vw;
+  background: #F9B08C;
+  background: radial-gradient(circle, rgba(249, 176, 140, 1) 4%, rgba(181, 203, 144, 1) 100%);
+  padding: 2vw;
+}
+
+#info {
+  padding-top: 25px;
+}
+
+form {
+  box-shadow: 10px 0 50px #cacbcc;
+  background-color: #fdfddf99;
+  width: auto;
+  padding: 3px;
+}
+
+#tree {
+  height: clamp(400px, 100%, 800px);
+}
+
+img[src="images/odin-lined.png"] {
+  height: 100px;
+}
+
+#logo {
+  font-size: 1rem;
+  font-family: 'RecursoSansRegular';
+  position: absolute;
+  top: 25vh;
+  background: #22222240;
+  color: whitesmoke;
+  align-content: center;
+  width: 28.8vw;
+  max-width: 28.8vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#credit {
+  font-size: .4rem;
+  background: #22222240;
+  color: whitesmoke;
+  position: absolute;
+  bottom: 10px;
+}
+
+#hat {
+  color: var(--svg-color);
+  transition: fill 0.3s ease;
+}
+
+input:valid {
+  background-color: #d5e6ce;
+  color: #6ac57d;
+}
+
+input:invalid {
+  background-color: #e5c3c9;
+  color: #c77072;
+}
+
+input:placeholder-shown {
+  color: black;
+  background-color: #c3c0c0;
+}
+
+#buttons {
+  margin-left: 35%;
+}
+
+button {
+  background-color: #c44c47;
+  color: #f7f4cc;
+  height: 1.35rem;
+  width: 2rem;
+}
+
+a {
+  color: #a29ee6;
+}
+
+a:visited {
+  color: #aed8e6;
+}
+

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Sign Up</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+            <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/recurso-sans" type="text/css"/> 
+    </head>
+    <body>
+        <div class="page">
+            <div class="heading">            
+                <img id="tree" src="images/al-soot-eIiY8uk3GxI-unsplash.jpg" alt="Image of a tree with a door on it."><div id="credit">Photo by <a href="https://unsplash.com/@anspchee?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Al Soot</a> on <a href="https://unsplash.com/photos/a-tree-with-a-door-in-the-trunk-of-it-eIiY8uk3GxI?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+                </div></img>
+                <div id="logo"><img src="images/odin-lined.png"><span>Enter Wonderland</span></div>
+                
+            </div>
+            <!-- FORM -->
+            <div class="form">
+                <p id="info">Enter for a chance to win two tickets to the unforgettable world of Wonderland. Experience the magic, mystery, and marvels that await just beyond the looking glass.</p>
+                <form name="sweepstakes" id="sweepstakes" action="">
+                    <p>
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name" placeholder="FIRST_NAME" required>
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" placeholder="LAST_NAME" required>
+                    </p>
+                    <p>
+                        <label for="email">E-mail address</label>
+                        <input type="email" id="email" placeholder="NAME@PLACE.THING" required>
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" placeholder="555-555-5555">
+                    </p>
+                    <p>
+                        <label for="date">When would you like to go?</label>
+                        <input type="date" id="date" placeholder="07/04/1862" onfocus="(this.type='date')" onblur="(this.type='text')" required autofocus>
+                    </p>
+                    <p>
+                        <label for="color">What color <span id="hat">hat</span> will you wear to the tea party?</label>
+                        <input type="color" id="colorPicker"></input>
+                    </p>
+                    <p>
+                        <label for="password">Password</label>
+                        <input type="password" id="password" placeholder="**********" required>
+                        <label for="cpassword">Confirm Password</label>
+                        <input type="password" id="cpassword" placeholder="**********" required>
+                    </p>
+                    <p id="buttons">
+                        <button type="reset" value="reset">Reset</button>
+                        <button type="submit" value="Submit">Submit</button>
+                    </p>
+                </form>
+            </div>
+        </div>
+        
+        <script src="script.js" async defer></script>
+        
+    </body>
+</html>
